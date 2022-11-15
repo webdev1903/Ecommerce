@@ -44,7 +44,7 @@ export default function Cart() {
   const cartDispatch = useDispatch();
   const token = state.token;
   const navigate = useNavigate();
-  console.log(data);
+  // console.log(data);
 
   useEffect(() => {
     cartDispatch(getCartItems(state.token));

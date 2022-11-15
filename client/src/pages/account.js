@@ -70,8 +70,8 @@ export default function Account() {
         w="100%"
       >
         {orders.length > 0 &&
-          orders.map((e) => (
-            <Box border="3px solid" borderColor="black">
+          orders.map((e, i) => (
+            <Box border="3px solid" borderColor="black" key={i}>
               <Text>
                 <Heading size="medium">Order Id: {e.orderId}</Heading> Ordered
                 Date: {e.createdAt.split("T")[0]}

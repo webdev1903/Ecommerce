@@ -96,16 +96,16 @@ export default function OrderSummary() {
             }
           )
           .then((res) => {
-            console.log(res);
+            // console.log(res);
           });
 
-        console.log("success");
+        // console.log("success");
         dispatch(resetCart());
         await axios
           .delete(`/carts`, {
             headers: { authorization: `Bearer ${token}` },
           })
-          .then((res) => console.log(res));
+          .then((res) => res);
         navigate(`/paymentsuccess`);
       },
       theme: {

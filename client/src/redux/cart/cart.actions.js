@@ -45,6 +45,7 @@ export const addItemToCart = (token, _id) => async (dispatch) => {
     );
     return dispatch({ type: ADD_ITEM_TO_CART_SUCCESS, payload: res.data });
   } catch (error) {
+    // console.log(error);
     return dispatch({ type: ADD_ITEM_TO_CART_ERROR });
   }
 };
@@ -63,6 +64,7 @@ export const updateCartItem = (id, quantity, token) => async (dispatch) => {
     );
     return dispatch({ type: UPDATE_CART_ITEMS_SUCCESS, payload: res.data });
   } catch (error) {
+    // console.log(error);
     return dispatch({ type: UPDATE_CART_ITEMS_ERROR });
   }
 };

@@ -26,17 +26,25 @@ export default function CartItem({
         <Text>{title}</Text>
       </Td>
       <Td>
-        <Button onClick={handleQuantity.bind(_id, quantity, -1, token)}>
+        <Button
+          onClick={() => {
+            if (quantity === 1) {
+              handleRemove(_id, token);
+            } else {
+              handleQuantity(_id, quantity, -1, token);
+            }
+          }}
+        >
           ➖
         </Button>
         <Button>{quantity}</Button>
-        <Button onClick={handleQuantity.bind(_id, quantity, 1, token)}>
+        <Button onClick={handleQuantity.bind(null, _id, quantity, 1, token)}>
           ➕
         </Button>
       </Td>
       <Td>Rs. {price}</Td>
       <Td>
-        <Button onClick={handleRemove.bind(_id, token)}>Remove</Button>
+        <Button onClick={handleRemove.bind(null, _id, token)}>Remove</Button>
       </Td>
     </Tr>
   );

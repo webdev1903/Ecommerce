@@ -47,7 +47,9 @@ router.delete("", authMiddleware, async (req, res) => {
 
 router.delete("/:id", authMiddleware, async (req, res) => {
   try {
-    const cart = await Cart.findByIdAndDelete(req.params.id);
+    const cart = await Cart.findByIdAndDelete(req.params.id).populate(
+      "product_id"
+    );
     return res.status(201).send(cart);
   } catch (error) {
     return res.status(500).send(error);

@@ -9,7 +9,7 @@ export default function ProductCard({ image, title, price, ratings, _id }) {
   const { state } = useContext(AuthContext);
   const dispatch = useDispatch();
   const { data } = useSelector((store) => store.cart);
-  console.log(data);
+  // console.log(data);
 
   const handleAddToCart = async () => {
     if (!state.authStatus) {
@@ -17,7 +17,7 @@ export default function ProductCard({ image, title, price, ratings, _id }) {
     }
     let flag = false;
     data.filter((e) => {
-      if (e.product_id == _id) {
+      if (e.product_id == _id || e.product_id._id == _id) {
         alert("Item already in the cart");
         flag = true;
       }

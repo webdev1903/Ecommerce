@@ -34,7 +34,7 @@ export default function Product() {
   const totalPages = useRef(null);
   const { state, dispatch } = useContext(AuthContext);
 
-  console.log("works");
+  // console.log("works");
 
   useEffect(() => {
     handleData(page, filter);

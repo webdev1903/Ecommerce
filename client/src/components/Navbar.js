@@ -28,10 +28,6 @@ export default function Navbar() {
     debouncing(searchText);
   }, [searchText]);
 
-  const displayAccountBox = () => {
-    setAccountBox(!accountBox);
-  };
-
   const getFirstName = () => {
     const userDetails = state.user;
     let Name = userDetails.name;
@@ -121,8 +117,6 @@ export default function Navbar() {
           display="relative"
           w="150px"
           _hover={{ border: "2px solid", borderColor: "black.200" }}
-          onHover={displayAccountBox}
-          mouseOut={displayAccountBox}
         >
           <Link to="/account">
             <Flex direction="column">
