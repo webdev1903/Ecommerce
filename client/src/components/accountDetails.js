@@ -9,6 +9,7 @@ export default function AccountDetails() {
       top="50px"
       backgroundColor="white"
       zIndex="21"
+      // margin="2"
     >
       <li>Account Details</li>
       <li>Orders</li>
