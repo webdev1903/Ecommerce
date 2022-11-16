@@ -92,7 +92,7 @@ export default function Home() {
   }
 
   const handleData = async () => {
-    const res = await axios.get(`products?page=1&limit=5`);
+    const res = await axios.get(`/products?page=1&limit=5`);
     setData(res.data.products);
     dispatch({ type: Loading });
   };
