@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Ecommerce Project :
+This project in general is online marketplace to buy products like an ecommerce website. It has a similar user experience as of any ecommerce website available today. An user can signup, browse for products, add them into cart, and make payment. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech Stack :
+The following is the tech stack we used to build this website :-
 
-## Available Scripts
+<img src="https://cdn-icons-png.flaticon.com/512/226/226269.png" width=20/> HTML
 
-In the project directory, you can run:
+<img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width=20 /> CSS
 
-### `npm start`
+<img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" width=20/> JavaScript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://user-images.githubusercontent.com/76178272/205586554-d474d130-7c12-4a31-84cd-da88ef4a1033.png" width=60/> MERN
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://user-images.githubusercontent.com/76178272/205587151-81be658f-1e1f-4a08-8a3d-c468c9f310ca.png" width=20 /> Redux
 
-### `npm test`
+<img src="https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg" width=20 /> Chakra UI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Landing Page :
+The landing page design is custom made, with simplicity. It has a navbar with options to login,signup,cart,products and a search bar.
 
-### `npm run build`
+![ecommerce-hero-image](https://user-images.githubusercontent.com/76178272/205598870-84364fe2-a6eb-4f7c-8771-3b9cb095017f.jpg)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Product Page :
+Users can browse for products on this page and they can also apply filters provided on the page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![ecommerce-products](https://user-images.githubusercontent.com/76178272/205599105-2c983ac5-2696-4ae6-a468-43dcbcf0eafb.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Cart Section :
+User can add a product to cart from product page. In cart section user can alter the quantity of the product, remove the product and also can apply coupon codes for discount.
 
-### `npm run eject`
+![ecommerce-cart](https://user-images.githubusercontent.com/76178272/205599262-2f83d7b0-097a-4d3a-a3fd-574366980fd9.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Payment Page :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Users can choose their preferred method of product payment here. Razorpay's payment gateway has been integrated here.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![ecommerce-payment](https://user-images.githubusercontent.com/76178272/205599427-014efeb8-e5bf-4937-9aab-feff99fc980d.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Order or History Section :
+The user can look up their order history and see all of the details.
 
-## Learn More
+![ecommerce-account](https://user-images.githubusercontent.com/76178272/205599947-3869d90c-1a19-4ac3-93a2-61eaaf045c07.jpg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Responsive :
+Our website is responsive as well.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Deployed Link :
+    ecommerce-production-da4a.up.railway.app
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Clone Ecommerce :
+    https://github.com/webdev1903/Ecommerce.git
