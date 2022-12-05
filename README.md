@@ -1,5 +1,5 @@
 # Ecommerce Project :
-This project in general is online marketplace to buy products like an ecommerce website. It has a similar user experience as of any ecommerce website available today. An user can signup, browse for products, add them into cart, and make payment. 
+This project in general is online marketplace to buy products like an ecommerce website. It has a similar user experience as of any ecommerce website available today. An user can signup, browse for products, add them into cart, and make payment. This is a full stack website and the stack used is MERN.
 
 ## Tech Stack :
 The following is the tech stack we used to build this website :-
