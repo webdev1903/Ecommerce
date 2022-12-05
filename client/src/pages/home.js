@@ -1,5 +1,13 @@
 import { useState, useEffect, useContext } from "react";
-import { Box, Image, Grid, GridItem, Text, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Grid,
+  GridItem,
+  Text,
+  Button,
+  Spinner,
+} from "@chakra-ui/react";
 import Popover from "../components/popover";
 import { AuthContext } from "../context/AuthContext/AuthContextProvider";
 import axios from "axios";
@@ -19,76 +27,16 @@ export default function Home() {
     handleData();
   }, []);
   if (state.loading) {
-    return <h1>...Loading</h1>;
-    // return (
-    //   <Box>
-    //     <Box w="100%">
-    //       <Skeleton w="100%" h="600px" />
-    //     </Box>
-    //     <Grid
-    //       top="350px"
-    //       templateColumns={["repeat(2,1fr)", "repeat(3,1fr)", "repeat(5,1fr)"]}
-    //       justifyContent="space-between"
-    //       gap={1}
-    //       align="center"
-    //     >
-    //       <GridItem h="300px">
-    //         <Image />
-    //         <Text>
-    //           <Skeleton />
-    //         </Text>
-    //         <Button>
-    //           <Skeleton />
-    //         </Button>
-    //         <Button>
-    //           <Skeleton />
-    //         </Button>
-    //       </GridItem>
-    //       <GridItem h="300px">
-    //         <Image />
-    //         <Text>
-    //           <Skeleton />
-    //         </Text>
-    //         <Button>
-    //           <Skeleton />
-    //         </Button>
-    //         <Button>
-    //           <Skeleton />
-    //         </Button>
-    //       </GridItem>
-    //       <GridItem h="300px">
-    //         <Image />
-    //         <Text>
-    //           <Skeleton />
-    //         </Text>
-    //         <Button>
-    //           <Skeleton />
-    //         </Button>
-    //         <Button>
-    //           <Skeleton />
-    //         </Button>
-    //       </GridItem>
-    //       <GridItem h="300px">
-    //         <Image />
-    //         <Text>
-    //           <Skeleton />
-    //         </Text>
-    //         <Button>
-    //           <Skeleton />
-    //         </Button>
-    //         <Button>
-    //           <Skeleton />
-    //         </Button>
-    //       </GridItem>
-    //     </Grid>
-    //     <Button>
-    //       <Skeleton />
-    //     </Button>
-    //     <Box>
-    //       <Skeleton />
-    //     </Box>
-    //   </Box>
-    // );
+    return (
+      <Spinner
+        size="xl"
+        thickness="4px"
+        speed="0.65s"
+        emptyColor="gray.200"
+        color="blue.500"
+        marginTop={["150px", "300px", "300px"]}
+      />
+    );
   }
 
   const handleData = async () => {

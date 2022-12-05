@@ -6,6 +6,7 @@ import {
   Text,
   Button,
   Select,
+  Spinner,
 } from "@chakra-ui/react";
 import { useState, useEffect, useRef, useContext } from "react";
 import { AuthContext } from "../context/AuthContext/AuthContextProvider";
@@ -59,6 +60,18 @@ export default function Product() {
       totalPages.current = res.data.pages;
     }
   };
+  if (data.length === 0) {
+    return (
+      <Spinner
+        size="xl"
+        thickness="4px"
+        speed="0.65s"
+        emptyColor="gray.200"
+        color="blue.500"
+        marginTop={["150px", "300px", "300px"]}
+      />
+    );
+  }
 
   return (
     <Box>
